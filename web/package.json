@@ -61,6 +61,7 @@
     "stills": "yarn run:node tools/generateStillImages.ts"
   },
   "dependencies": {
+    "@jbrowse/react-linear-genome-view": "1.0.4",
     "animate.css": "4.1.0",
     "autoprefixer": "9.8.6",
     "axios": "0.21.1",

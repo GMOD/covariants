@@ -19,6 +19,7 @@ import { ReactComponent as NextstrainIconBase } from 'src/assets/images/nextstra
 
 import { PlotCard } from './PlotCard'
 import { ProteinCard } from './ProteinCard'
+import { GenomeBrowser } from './GenomeBrowser'
 
 const EditableClusterContent = styled(Editable)``
 
@@ -127,6 +128,12 @@ export function VariantsPageDisconnected({ currentCluster }: VariantsPageProps) 
               <Row noGutters className="mb-2">
                 <Col>
                   <ProteinCard cluster={currentCluster} />
+                </Col>
+              </Row>
+
+              <Row noGutters className="mb-2">
+                <Col>
+                  <GenomeBrowser />
                 </Col>
               </Row>
             </EditableClusterContent>
