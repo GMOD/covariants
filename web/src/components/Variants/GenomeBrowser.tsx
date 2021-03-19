@@ -34,7 +34,7 @@ const assembly = {
   },
 }
 
-export function GenomeBrowser() {
+export default function GenomeBrowser() {
   const state = createViewState({
     assembly,
     tracks: [],

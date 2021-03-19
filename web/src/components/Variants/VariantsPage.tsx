@@ -1,3 +1,4 @@
+import dynamic from 'next/dynamic'
 import React from 'react'
 
 import { connect } from 'react-redux'
@@ -19,7 +20,9 @@ import { ReactComponent as NextstrainIconBase } from 'src/assets/images/nextstra
 
 import { PlotCard } from './PlotCard'
 import { ProteinCard } from './ProteinCard'
-import { GenomeBrowser } from './GenomeBrowser'
+
+// import { GenomeBrowser } from './GenomeBrowser'
+const GenomeBrowser = dynamic(() => import('./GenomeBrowser'), { ssr: false })
 
 const EditableClusterContent = styled(Editable)``
 
